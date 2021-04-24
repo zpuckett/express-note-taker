@@ -3,11 +3,11 @@ const path = require('path');
 
 module.exports = app => {
 
-    fs.readFile("db/db.json", "utf8", (err, data) => {
+    fs.readFile("Develop/db/db.json", "utf8", (err, data) => {
         if (err) throw err;
 
         var notes = JSON.parse(data);
-    
+        
 
     // api routes
     //
@@ -37,19 +37,19 @@ module.exports = app => {
     //
 
     app.get('/notes', function (req, res) {
-        res.sendFile(path.join(__dirname, "../public/notes.html"));
+        res.sendFile(path.join(__dirname, "../Develop/public/notes.html"));
     });
 
     app.get('*', function (req, res) {
-        res.sendFile(path.join(__dirnamw, "../public/index.html"));
+        res.sendFile(path.join(__dirname, "../Develop/public/index.html"));
     });
 
     function updateDb() {
-        fs.writeFile("db/db.json", JSON.stringify(notes, '\t'), err => {
+        fs.writeFile("Develop/db/db.json", JSON.stringify(notes, '\t'), err => {
             if (err) throw err;
             return true;
           });
       }
   });
 
-}
+}  
