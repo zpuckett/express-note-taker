@@ -19,7 +19,7 @@ Use npm install and node server.js to view on localhost.
 
 ## Walkthrough
 
-![Walkthrough](noteexpresswt.gif)
+![Walkthrough](./noteexpresswt.gif)
 
 
 ## Made with...
