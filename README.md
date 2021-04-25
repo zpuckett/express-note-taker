@@ -28,7 +28,7 @@ Use npm install and node server.js to view on localhost.
 * Express
 * JavaScript
 
-## Contrbution
+## Contribution
 
 * Vanderbilt Coding Bootcamp
 
