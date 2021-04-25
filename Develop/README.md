@@ -1,7 +1,7 @@
 # Note Taker Express
 
 ## Summary
-This app is design for a simple work spave to keep track of notes. Created from Express.js.
+This app is design for a simple work space to keep track of notes. Created from Express.js.
 
 ## Prerequisites
 * [NodeJS](https://nodejs.org/)
