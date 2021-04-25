@@ -3,7 +3,7 @@ const path = require('path');
 const notesData = getNotes();
 
 function getNotes() {
-   let data = fs.readFileSync("db/db.json", "utf8");
+   let data = fs.readFileSync("./db/db.json", "utf8");
 
     let notes = JSON.parse(data);
 
@@ -23,7 +23,7 @@ module.exports = function (app) {
     app.post("/api/notes", function (req, res) {
         let newNote = req.body;
         notesData.push(req.body);
-        fs.writeFileSync('db/db.json', JSON.stringify(notesData));
+        fs.writeFileSync('./db/db.json', JSON.stringify(notesData));
         res.json(true);
         return console.log("Added new note: " + newNote.title);
     });
