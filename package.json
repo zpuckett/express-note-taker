@@ -4,12 +4,20 @@
   "description": "An app for creating, viewing, saving, and deleting notes.",
   "main": "server.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
   },
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "express": "^4.17.1",
-    "nodemon": "nodemon"
-  }
+    "express": "^4.17.1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/zpuckett/express-note-taker.git"
+  },
+  "bugs": {
+    "url": "https://github.com/zpuckett/express-note-taker/issues"
+  },
+  "homepage": "https://github.com/zpuckett/express-note-taker#readme"
 }
